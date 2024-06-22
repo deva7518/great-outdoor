@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+.head1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.head1 li{
+    list-style: none;
+    padding: 30px 0;
+}
+.head1 li a{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+
+}
+.head1 li a:hover{
+    color: white;
+}
+
+.hd:hover{
+    transition: 0.3s ease;
+    transform: scale(1.3);
+}
+
+.head1 .hea{
+    font-size: 40px;
+    padding-top: 10px;
+    background: linear-gradient(rgb(255, 248, 248),rgb(0, 229, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease;
+}
+.hea:hover{
+    transform: scale(1.3);
+}
+
+.head1 li a i{
+    padding: 0 10px;
+}
+
+.head2{
+   text-align: center;
+   margin-top: 15%;
+  
+}
+.head2 h1{
+    font-size: 50px;
+    background: linear-gradient(rgb(0, 170, 255), rgb(255, 255, 255),rgb(255, 255, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.head2 p{
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.material{
+    width: 100%;
+    height: 270vh;
+    background: #0c0c0c;
+    color: white;
+}
+.mate{
+    text-align: center;
+    padding-top: 50px;
+}
+.mate h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.mate p{
+    font-size: 18px;
+}
+.mate1{
+    display: block;
+    margin-left: 16%;
+
+}
+.mate1 img{
+    width: 25%;
+    aspect-ratio: 4/6;
+    padding: 30px 10px;
+}
+.mate1 img:hover{
+    transform: scale(1.1);
+}
+
+
+.btn {
+    margin-left: 33.5%;
+    --green: #07311f;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  }
+  
+  .btn:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  .btn:hover:before {
+    transform: translateX(15em);
+  }
+
+
+.mate2{
+    text-align: center;
+    margin-top: 5%;
+}
+.mate2 h1{
+
+}
+.mate2 p{
+
+}
+
+.mate3{
+    margin-left: 15%;
+    
+}
+.mate3 img{
+    width:40%;
+    aspect-ratio: 6/3.5;
+    padding: 30px 10px;
+}
+.mate3 img:hover{
+    transform: translate(1em, 1em);
+    filter: drop-shadow(0 0 15px rgba(131, 131, 131, 0.488));
+}
+.mat{
+    margin-top: -20px;
+    display: flex;
+    margin-left: 15%;
+    text-align: center;
+}
+.mat1{
+    padding-right: 22%;
+    margin-left: -5%;
+}
+.mat1 h1{
+    padding: 10px 10px;
+}
+.mat2{}
+
+.mat2 h1{
+    padding: 10px 10px;
+}
+
+
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  button {
+    --primary-color: #ffffff;
+    --hovered-color: #00c3ff;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 38%;  
+    margin-top: 5%;
+}
+  
+  button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  
+  button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  button p::before {
+    position: absolute;
+    content: "All Posts";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.1s ease-out;
+  }
+  
+  button:hover::after {
+    width: 100%;
+  }
+  
+  button:hover p::before {
+    width: 100%;
+  }
+  
+  button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color);
+  }
+  
+  button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+  
+
+
+
+.footer{
+    background-image: url(footer.jpg);
+    background-size: cover;
+    height: 80vh;
+    margin-top: 50px;
+    filter: brightness(90%);
+}
+
+.footer ul{
+    display: flex;
+    padding-top: 35%;
+    color: white;
+    margin-left: 25%;
+}
+.footer ul p{
+   padding: 0 10px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer li a{
+    text-decoration: none;
+    color: white;
+}
+.footer ul li:hover{
+    transform: rotate(10deg);
+}
